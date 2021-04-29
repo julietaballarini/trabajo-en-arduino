@@ -1,1 +1,1 @@
-# trabajo-en-arduino
+# practico-en-arduino
