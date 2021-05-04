@@ -11,7 +11,9 @@ void setup()// predefine las cosas que vas a usar en el programa
 
 void loop()// ejecutar el codigo en forma continua
 {
-  if (-40 + 0.488155 * (analogRead(A0) - 20) > 35) { //si la temperatura que midio el sensor es mayor a 35°
+  int temperatura = -40 + 0.488155 * (analogRead(A0) - 20); //mido la temperatura en Cº
+  
+  if ( temperatura > 35) { //si la temperatura que midio el sensor es mayor a 35°
     digitalWrite(12, HIGH);// enciendo el LED rojo
     digitalWrite(11, LOW);// apago el LED verde
   } else {
