@@ -3,11 +3,14 @@ int variable = 0;
 void setup()
 {
   Serial.begin(9600);
+
 }
 
 void loop()
 {
-  variable = random(0, 360 + 1);
-  Serial.println(variable);
-  delay(20); 
+  for(int contador=0;contador<=360;contador+=1){
+    
+    Serial.println(contador);
+  	delay(20); 
+  }
 }
